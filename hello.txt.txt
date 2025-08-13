@@ -1,1 +1,55 @@
-Hello GitHub!
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\Github\github-practice> git add .
+PS D:\Github\github-practice> git commit -m"add hello.txt"
+[main 5a3c278] add hello.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt.txt
+PS D:\Github\github-practice> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/suyhuynh2/github-practice.git
+   8b046d8..5a3c278  main -> main
+PS D:\Github\github-practice> git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 994 bytes | 198.00 KiB/s, done.
+From https://github.com/suyhuynh2/github-practice
+   5a3c278..1857f45  main       -> origin/main
+Updating 5a3c278..1857f45
+Fast-forward
+ README.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS D:\Github\github-practice> git checkout -b feature/add-intro
+Switched to a new branch 'feature/add-intro'
+PS D:\Github\github-practice> echo "Intro content" > intro.md
+PS D:\Github\github-practice> git add .
+PS D:\Github\github-practice> git commit -m "add intro.md"
+[feature/add-intro 7bf6d48] add intro.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 intro.md
+PS D:\Github\github-practice> git push -u origin feature/add-intro
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature/add-intro' on GitHub by visiting:
+remote:      https://github.com/suyhuynh2/github-practice/pull/new/feature/add-intro
+remote:
+To https://github.com/suyhuynh2/github-practice.git
+ * [new branch]      feature/add-intro -> feature/add-intro
+branch 'feature/add-intro' set up to track 'origin/feature/add-intro'.
+PS D:\Github\github-practice>
