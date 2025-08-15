@@ -1,3 +1,3 @@
-﻿A: branch version
+﻿A: Hello form main branch
 B: unchanged
 C: unchanged
