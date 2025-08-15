@@ -1,3 +1,3 @@
-﻿A: Hello form main branch
+﻿A: Hello form branch conflict-demo
 B: unchanged
 C: unchanged
